@@ -1,0 +1,222 @@
+body {
+	box-sizing: border-box;
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 950px;
+	border: 10px solid #180458;
+	min-height: 100vh;
+	margin: 0 auto;
+	background-color #897f82;
+}
+
+/*-----------------------------------------------------------------------------*/
+ /* adjust the cover image for various screen sizes */
+
+.headline {
+	max-height: 300px;
+	overflow: hidden;
+	border 2px solid #8b002a;
+}
+
+.headline-image {
+	max-width: 100%;
+}
+
+@media all and (min-width: 630px){
+	.headline-image {
+		position: relative;
+		top: -50px;
+	}
+}
+
+@media all and (min-width: 730px){
+	.container {
+		border: 20px solid #180458;
+	}
+	.headline-image {
+		position: relative;
+		top: -80px;
+	}
+}
+
+@media all and (min-width: 785px){
+	.headline {
+		max-height: 350px;
+	}
+
+	.headline-image {
+		position: relative;
+		top: -50px;
+	}
+}
+
+@media all and (min-width: 840px){
+	.headline-image {
+		position: relative;
+		top: -80px;
+	}
+}
+
+@media all and (min-width: 900px){
+
+	.headline {
+		max-height: 380px;
+	}
+	.headline-image {
+		position: relative;
+		top: -100px;
+	}
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+header {
+	margin-top: 3px;
+	border-top: 7px double #af1d33;
+	opacity: .8;
+}
+h1 {
+	text-align: center;
+	font-weight: 300;
+	padding-top: .5rem;
+}
+
+
+.innercontainer {
+	margin: 5px;
+}
+
+aside {
+	align-self: flex-start;
+	background-color: #d8dadc;
+	padding: 20px;
+}
+
+.maincontent {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+@media all and (min-width: 800px){
+	.maincontent {
+		display: flex;
+	}
+	aside {
+		flex: 1;
+		margin-left: 5px;
+	}
+}
+
+.hidden-until-medium {
+	display: none;
+}
+
+@media all and (min-width: 800px){
+	.hidden-until-medium {
+		display: block;
+	}
+}
+
+@media all and (min-width: 800px){
+	aside.hidden-at-medium {
+		display: none;
+	}
+}
+
+section {
+	padding: 0 1.25rem;
+	flex: 3;
+}
+
+@media all and (min-width: 800px){
+	section {
+		margin-left: 1rem;
+	}
+}
+
+.blogpost-highlight {
+	text-align: center;
+	padding: .50rem;
+	background-color: #af1d33;
+	color: white;
+	}
+
+h4 {
+	text-align: center;
+}
+
+.post {
+	margin-bottom: 2rem;
+}
+
+.blogpost-intro {
+	
+	margin-bottom: 1rem;
+}
+
+@media all and (min-width: 800px){
+	.blogpost-intro {
+		display: flex;
+	}
+}
+
+.ilovemywife {
+	margin-right: 1rem;
+	width: 200px;
+	height: 200px;
+}
+
+.full-article {
+	display: inline-block;
+}
+
+.copyright {
+	color: #180458;
+}
+
+i {
+	color: #af1d33;
+}
+
+i:hover {
+	color: #180458;
+}
+.icons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.news-links {
+	color: #292a2d;
+}
+
+.news-links:hover {
+	color: #af1d33;
+}
+
+.footer {
+	margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
