@@ -11,7 +11,10 @@ body {
 	background-color #897f82;
 }
 
-/*-----------------------------------------------------------------------------*/
+/*-------------------------------------------------*/
+
+
+
  /* adjust the cover image for various screen sizes */
 
 .headline {
@@ -70,7 +73,7 @@ body {
 	}
 }
 
-/*-------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------*/
 
 header {
 	margin-top: 3px;
@@ -99,41 +102,13 @@ aside {
 	margin-bottom: 1rem;
 }
 
-@media all and (min-width: 800px){
-	.maincontent {
-		display: flex;
-	}
-	aside {
-		flex: 1;
-		margin-left: 5px;
-	}
-}
-
 .hidden-until-medium {
 	display: none;
-}
-
-@media all and (min-width: 800px){
-	.hidden-until-medium {
-		display: block;
-	}
-}
-
-@media all and (min-width: 800px){
-	aside.hidden-at-medium {
-		display: none;
-	}
 }
 
 section {
 	padding: 0 1.25rem;
 	flex: 3;
-}
-
-@media all and (min-width: 800px){
-	section {
-		margin-left: 1rem;
-	}
 }
 
 .blogpost-highlight {
@@ -156,13 +131,8 @@ h4 {
 	margin-bottom: 1rem;
 }
 
-@media all and (min-width: 800px){
-	.blogpost-intro {
-		display: flex;
-	}
-}
 
-.ilovemywife {
+.image {
 	margin-right: 1rem;
 	width: 200px;
 	height: 200px;
@@ -199,9 +169,36 @@ i:hover {
 .footer {
 	margin-top: 2rem;
 }
+/* --------- Media Queries -------------------*/
 
+@media all and (min-width: 800px){
 
+	.blogpost-intro {
+		display: flex;
+	}
 
+	section {
+		margin-left: 1rem;
+	}
+
+	.hidden-until-medium {
+		display: block;
+	}
+
+	aside.hidden-at-medium {
+		display: none;
+	}
+
+	.maincontent {
+		display: flex;
+	}
+
+	aside {
+		flex: 1;
+		margin-left: 5px;
+	}
+
+}
 
 
 
