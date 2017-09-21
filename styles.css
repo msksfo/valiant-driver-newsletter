@@ -11,6 +11,10 @@ body {
 	background-color #897f82;
 }
 
+hr {
+	clear: both;
+}
+
 /*-------------------------------------------------*/
 
 
@@ -127,7 +131,6 @@ h4 {
 }
 
 .blogpost-intro {
-	
 	margin-bottom: 1rem;
 }
 
@@ -136,6 +139,7 @@ h4 {
 	margin-right: 1rem;
 	width: 200px;
 	height: 200px;
+	
 }
 
 .full-article {
@@ -174,8 +178,27 @@ i:hover {
 @media all and (min-width: 800px){
 
 	.blogpost-intro {
-		display: flex;
+		display flex;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		margin-top: 1.5rem;
 	}
+
+	.blogpost-intro p {
+		margin-top: 0;
+	}
+
+
+	/* 
+	.blogpost-intro p {
+		float: right;
+	}
+
+	.image {
+		float: left;
+	}
+
+	*/
 
 	section {
 		margin-left: 1rem;
